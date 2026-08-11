@@ -17,7 +17,6 @@ public class FileSearchFrame extends JFrame {
     private JTextArea txtResult;
     private JLabel lblFile;
     private JProgressBar progressBar;
-    private SwingWorker<List<String>, Integer> currentWorker;
 
     public FileSearchFrame() {
         setTitle("Bai 7 - Tim kiem tu khoa trong file");
@@ -36,19 +35,24 @@ public class FileSearchFrame extends JFrame {
         progressBar.setStringPainted(true);
 
         JPanel topPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        topPanel.add(new JLabel("File:"));
         topPanel.add(lblFile);
         topPanel.add(btnChoose);
 
-        JPanel midPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
-        midPanel.add(new JLabel("Tu khoa:"));
-        midPanel.add(txtKeyword);
-        midPanel.add(btnSearch);
+        JPanel keywordPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
+        keywordPanel.add(new JLabel("Tu khoa:"));
+        keywordPanel.add(txtKeyword);
+        keywordPanel.add(btnSearch);
 
         JScrollPane scrollPane = new JScrollPane(txtResult);
 
+        JPanel centerContainer = new JPanel(new BorderLayout());
+        centerContainer.add(keywordPanel, BorderLayout.NORTH);
+        centerContainer.add(scrollPane, BorderLayout.CENTER);
+
+        setLayout(new BorderLayout(10, 10));
         add(topPanel, BorderLayout.NORTH);
-        add(midPanel, BorderLayout.CENTER);
-        add(scrollPane, BorderLayout.CENTER);
+        add(centerContainer, BorderLayout.CENTER);
         add(progressBar, BorderLayout.SOUTH);
 
         btnChoose.addActionListener(e -> chooseFile());
@@ -57,30 +61,29 @@ public class FileSearchFrame extends JFrame {
 
     private void chooseFile() {
         JFileChooser chooser = new JFileChooser();
-        int result = chooser.showOpenDialog(this);
-        if (result == JFileChooser.APPROVE_OPTION) {
+        if (chooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
             selectedFile = chooser.getSelectedFile();
-            lblFile.setText("File: " + selectedFile.getName());
+            lblFile.setText(selectedFile.getName());
         }
     }
 
     private void searchKeyword() {
         if (selectedFile == null) {
-            JOptionPane.showMessageDialog(this, "Vui long chon file truoc");
+            JOptionPane.showMessageDialog(this, "Vui long chon file!");
             return;
         }
-
         String keyword = txtKeyword.getText().trim();
         if (keyword.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Vui long nhap tu khoa");
+            JOptionPane.showMessageDialog(this, "Vui long nhap tu khoa!");
             return;
         }
 
         btnSearch.setEnabled(false);
-        txtResult.setText("");
+        btnChoose.setEnabled(false);
+        txtResult.setText("Dang tim kiem...\n");
         progressBar.setValue(0);
 
-        currentWorker = new SwingWorker<>() {
+        SwingWorker<List<String>, Integer> worker = new SwingWorker<>() {
             @Override
             protected List<String> doInBackground() throws Exception {
                 List<String> results = new ArrayList<>();
@@ -97,18 +100,23 @@ public class FileSearchFrame extends JFrame {
                         readBytes += line.getBytes(StandardCharsets.UTF_8).length + 1;
 
                         if (line.toLowerCase().contains(keyword.toLowerCase())) {
-                            matchingLines.add(String.format("%d: %s", lineNum, line));
+                            matchingLines.add(lineNum + ": " + line);
                         }
 
-                        int progress = totalBytes == 0 ? 100
-                            : (int) Math.min(100, (readBytes * 100 / totalBytes));
-                        setProgress(progress);
+                        int progress = (int) Math.min(100, (readBytes * 100 / totalBytes));
+                        publish(progress);
                     }
                 }
 
-                results.add("Tim thay " + matchingLines.size() + " dong chua tu khoa '" + keyword + "':\n");
+                results.add("=== Ket qua tim kiem '" + keyword + "' ===");
+                results.add("Tim thay " + matchingLines.size() + " dong:");
                 results.addAll(matchingLines);
                 return results;
+            }
+
+            @Override
+            protected void process(List<Integer> chunks) {
+                progressBar.setValue(chunks.get(chunks.size() - 1));
             }
 
             @Override
@@ -117,20 +125,15 @@ public class FileSearchFrame extends JFrame {
                     List<String> results = get();
                     txtResult.setText(String.join("\n", results));
                 } catch (Exception ex) {
-                    txtResult.setText("Loi khi doc file");
+                    txtResult.setText("Loi: " + ex.getMessage());
                 }
                 progressBar.setValue(100);
                 btnSearch.setEnabled(true);
+                btnChoose.setEnabled(true);
             }
         };
 
-        currentWorker.addPropertyChangeListener(evt -> {
-            if ("progress".equals(evt.getPropertyName())) {
-                progressBar.setValue((int) evt.getNewValue());
-            }
-        });
-
-        currentWorker.execute();
+        worker.execute();
     }
 
     public static void main(String[] args) {

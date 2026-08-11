@@ -2,7 +2,8 @@ package vn.edu.eaut.lab4;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.List;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 
 public class CancelTaskFrame extends JFrame {
     private JButton btnStart;
@@ -53,14 +54,14 @@ public class CancelTaskFrame extends JFrame {
                     if (isCancelled()) {
                         return null;
                     }
-                    setProgress(i);
+                    publish(i);
                     Thread.sleep(1000);
                 }
                 return null;
             }
 
             @Override
-            protected void process(List<Integer> chunks) {
+            protected void process(java.util.List<Integer> chunks) {
                 int value = chunks.get(chunks.size() - 1);
                 progressBar.setValue(value);
                 lblStatus.setText("Dang xu ly... " + value + "%");
@@ -68,7 +69,9 @@ public class CancelTaskFrame extends JFrame {
 
             @Override
             protected void done() {
-                if (!isCancelled()) {
+                if (isCancelled()) {
+                    lblStatus.setText("Da huy tac vu!");
+                } else {
                     progressBar.setValue(100);
                     lblStatus.setText("Hoan thanh!");
                     JOptionPane.showMessageDialog(CancelTaskFrame.this, "Hoan thanh!");
