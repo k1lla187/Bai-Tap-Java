@@ -7,11 +7,6 @@ import java.util.List;
 public class StudentStore {
     private static final List<Student> students = new ArrayList<>();
 
-    static {
-        students.add(new Student("SV001", "Nguyen Van An", "DCCNTT12", "an@example.com"));
-        students.add(new Student("SV002", "Tran Thi Binh", "DCCNTT12", "binh@example.com"));
-    }
-
     public static List<Student> findAll() {
         return students;
     }
