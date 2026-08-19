@@ -1,0 +1,343 @@
+19-Aug-2026 21:41:38.132 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+19-Aug-2026 21:41:38.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+19-Aug-2026 21:41:38.136 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+19-Aug-2026 21:41:38.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+19-Aug-2026 21:41:38.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Aug-2026 21:41:38.142 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Aug-2026 21:41:38.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+19-Aug-2026 21:41:38.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+19-Aug-2026 21:41:38.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Aug-2026 21:41:38.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:41:38.144 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:41:38.182 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+19-Aug-2026 21:41:38.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Aug-2026 21:41:38.184 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Aug-2026 21:41:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Aug-2026 21:41:38.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Aug-2026 21:41:38.189 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Aug-2026 21:41:38.191 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Aug-2026 21:41:38.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Aug-2026 21:41:38.193 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Aug-2026 21:41:38.199 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:41:38.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:41:38.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+19-Aug-2026 21:41:38.240 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+19-Aug-2026 21:41:38.975 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+19-Aug-2026 21:41:39.025 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1275] milliseconds
+19-Aug-2026 21:41:39.133 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Aug-2026 21:41:39.133 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+19-Aug-2026 21:41:39.215 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+19-Aug-2026 21:41:39.249 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation] was found with a last modified time that did not match the associated WAR. It will be deleted.
+19-Aug-2026 21:41:42.017 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Aug-2026 21:41:42.136 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+19-Aug-2026 21:41:42.231 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+19-Aug-2026 21:41:43.102 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+19-Aug-2026 21:41:43.764 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+19-Aug-2026 21:41:44.661 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+19-Aug-2026 21:41:44.846 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+19-Aug-2026 21:41:45.280 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+19-Aug-2026 21:41:46.451 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [7,228] ms
+19-Aug-2026 21:41:46.451 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+19-Aug-2026 21:41:46.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [49] ms
+19-Aug-2026 21:41:46.500 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+19-Aug-2026 21:41:47.032 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [530] ms
+19-Aug-2026 21:41:47.038 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+19-Aug-2026 21:41:47.118 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [80] ms
+19-Aug-2026 21:41:47.122 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+19-Aug-2026 21:41:47.205 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [83] ms
+19-Aug-2026 21:41:47.248 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+19-Aug-2026 21:41:47.432 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [184] ms
+19-Aug-2026 21:41:47.446 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+19-Aug-2026 21:41:47.508 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [8480] milliseconds
+19-Aug-2026 21:45:54.873 FATAL [http-nio-8081-exec-1] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: jakarta.faces.FacesException caught during processing of INVOKE_APPLICATION 5 : UIComponent-ClientId=, Message=#{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+19-Aug-2026 21:45:54.873 FATAL [http-nio-8081-exec-1] com.sun.faces.context.ExceptionHandlerImpl.log #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+	jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:64)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+		at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+		at jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+		at jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:83)
+		at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+		at jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+		at jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+		at jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1332)
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+		... 26 more
+	Caused by: jakarta.el.MethodNotFoundException: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:74)
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+		... 31 more
+19-Aug-2026 21:46:01.420 FATAL [http-nio-8081-exec-2] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: jakarta.faces.FacesException caught during processing of INVOKE_APPLICATION 5 : UIComponent-ClientId=, Message=#{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+19-Aug-2026 21:46:01.423 FATAL [http-nio-8081-exec-2] com.sun.faces.context.ExceptionHandlerImpl.log #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+	jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:64)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+		at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+		at jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+		at jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:83)
+		at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+		at jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+		at jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+		at jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1332)
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+		... 26 more
+	Caused by: jakarta.el.MethodNotFoundException: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:74)
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+		... 31 more
+19-Aug-2026 21:46:09.808 FATAL [http-nio-8081-exec-5] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: jakarta.faces.FacesException caught during processing of INVOKE_APPLICATION 5 : UIComponent-ClientId=, Message=#{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+19-Aug-2026 21:46:09.810 FATAL [http-nio-8081-exec-5] com.sun.faces.context.ExceptionHandlerImpl.log #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+	jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:64)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+		at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+		at jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+		at jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:83)
+		at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+		at jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+		at jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+		at jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1332)
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+		... 26 more
+	Caused by: jakarta.el.MethodNotFoundException: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:74)
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+		... 31 more
+19-Aug-2026 21:46:14.602 FATAL [http-nio-8081-exec-8] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: jakarta.faces.FacesException caught during processing of INVOKE_APPLICATION 5 : UIComponent-ClientId=, Message=#{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+19-Aug-2026 21:46:14.607 FATAL [http-nio-8081-exec-8] com.sun.faces.context.ExceptionHandlerImpl.log #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+	jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:64)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+		at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+		at jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+		at jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:83)
+		at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+		at jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+		at jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+		at jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1332)
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+		... 26 more
+	Caused by: jakarta.el.MethodNotFoundException: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:74)
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+		... 31 more
+19-Aug-2026 21:48:40.657 FATAL [http-nio-8081-exec-10] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: jakarta.faces.FacesException caught during processing of INVOKE_APPLICATION 5 : UIComponent-ClientId=, Message=#{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+19-Aug-2026 21:48:40.661 FATAL [http-nio-8081-exec-10] com.sun.faces.context.ExceptionHandlerImpl.log #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+	jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:64)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+		at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+		at jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+		at jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)
+	Caused by: jakarta.faces.FacesException: #{sinhVienBean.dsSinhVien}: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:83)
+		at com.sun.faces.application.ActionListenerImpl.processAction(ActionListenerImpl.java:62)
+		at jakarta.faces.component.UICommand.broadcast(UICommand.java:205)
+		at jakarta.faces.component.UIViewRoot.broadcastEvents(UIViewRoot.java:858)
+		at jakarta.faces.component.UIViewRoot.processApplication(UIViewRoot.java:1332)
+		at com.sun.faces.lifecycle.InvokeApplicationPhase.execute(InvokeApplicationPhase.java:56)
+		... 26 more
+	Caused by: jakarta.el.MethodNotFoundException: /sinhvien-list.xhtml @44,81 action="#{sinhVienBean.dsSinhVien}": Method not found: vn.edu.eaut.lab8.bean.SinhVienBean@3eb54cb2.dsSinhVien()
+		at com.sun.faces.facelets.el.TagMethodExpression.invoke(TagMethodExpression.java:74)
+		at com.sun.faces.application.ActionListenerImpl.getNavigationOutcome(ActionListenerImpl.java:74)
+		... 31 more
+19-Aug-2026 21:57:17.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+19-Aug-2026 21:57:17.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+19-Aug-2026 21:57:17.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+19-Aug-2026 21:57:17.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+19-Aug-2026 21:57:17.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+19-Aug-2026 21:57:17.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+19-Aug-2026 21:57:17.277 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+19-Aug-2026 21:57:17.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+19-Aug-2026 21:57:17.286 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+19-Aug-2026 21:57:17.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:57:17.289 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:57:17.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+19-Aug-2026 21:57:17.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+19-Aug-2026 21:57:17.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+19-Aug-2026 21:57:17.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+19-Aug-2026 21:57:17.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+19-Aug-2026 21:57:17.315 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+19-Aug-2026 21:57:17.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+19-Aug-2026 21:57:17.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+19-Aug-2026 21:57:17.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+19-Aug-2026 21:57:17.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:57:17.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+19-Aug-2026 21:57:17.323 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+19-Aug-2026 21:57:17.339 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\Apache Software Foundation\Tomcat 11.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+19-Aug-2026 21:57:18.101 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+19-Aug-2026 21:57:18.149 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [1269] milliseconds
+19-Aug-2026 21:57:18.248 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+19-Aug-2026 21:57:18.248 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+19-Aug-2026 21:57:18.330 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+19-Aug-2026 21:57:18.381 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation] was found with a last modified time that did not match the associated WAR. It will be deleted.
+19-Aug-2026 21:57:22.122 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+19-Aug-2026 21:57:22.254 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+19-Aug-2026 21:57:22.320 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+19-Aug-2026 21:57:23.509 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+19-Aug-2026 21:57:24.424 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+19-Aug-2026 21:57:25.007 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+19-Aug-2026 21:57:25.334 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+19-Aug-2026 21:57:25.801 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+19-Aug-2026 21:57:26.888 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [8,558] ms
+19-Aug-2026 21:57:26.888 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+19-Aug-2026 21:57:26.953 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [65] ms
+19-Aug-2026 21:57:26.955 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+19-Aug-2026 21:57:27.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [564] ms
+19-Aug-2026 21:57:27.519 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+19-Aug-2026 21:57:27.577 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [58] ms
+19-Aug-2026 21:57:27.579 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+19-Aug-2026 21:57:27.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [62] ms
+19-Aug-2026 21:57:27.642 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+19-Aug-2026 21:57:27.675 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [34] ms
+19-Aug-2026 21:57:27.682 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+19-Aug-2026 21:57:27.768 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [9617] milliseconds
+19-Aug-2026 21:58:30.586 FATAL [http-nio-8081-exec-2] com.sun.faces.context.ExceptionHandlerImpl.log JSF1073: jakarta.faces.application.ViewExpiredException caught during processing of RESTORE_VIEW 1 : UIComponent-ClientId=, Message=viewId:/sinhvien-list.xhtml - View /sinhvien-list.xhtml could not be restored.
+19-Aug-2026 21:58:30.586 FATAL [http-nio-8081-exec-2] com.sun.faces.context.ExceptionHandlerImpl.log viewId:/sinhvien-list.xhtml - View /sinhvien-list.xhtml could not be restored.
+	jakarta.faces.application.ViewExpiredException: viewId:/sinhvien-list.xhtml - View /sinhvien-list.xhtml could not be restored.
+		at com.sun.faces.lifecycle.RestoreViewPhase.execute(RestoreViewPhase.java:165)
+		at com.sun.faces.lifecycle.Phase.doPhase(Phase.java:72)
+		at com.sun.faces.lifecycle.RestoreViewPhase.doPhase(RestoreViewPhase.java:96)
+		at com.sun.faces.lifecycle.LifecycleImpl.execute(LifecycleImpl.java:131)
+		at jakarta.faces.webapp.FacesServlet.executeLifecyle(FacesServlet.java:691)
+		at jakarta.faces.webapp.FacesServlet.service(FacesServlet.java:449)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:673)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:1583)

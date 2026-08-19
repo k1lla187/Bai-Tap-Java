@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
+<h:head>
+    <title>Sửa Sinh viên JSF</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</h:head>
+<h:body style="background: #f8f9fa;">
+    <div class="container mt-4">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><h:link outcome="/index" value="Trang chủ"/></li>
+                <li class="breadcrumb-item"><h:link outcome="sinhvien-list" value="Danh sách"/></li>
+                <li class="breadcrumb-item active">Sửa Sinh viên</li>
+            </ol>
+        </nav>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-warning text-dark">
+                        <h4 class="mb-0"><i class="bi bi-pencil-square"></i> Cập nhật Sinh viên</h4>
+                    </div>
+                    <div class="card-body">
+                        <!-- Global Messages -->
+                        <h:messages globalOnly="true" infoStyle="color: green; font-weight: bold;"
+                                   errorStyle="color: red; font-weight: bold;"/>
+
+                        <h:form rendered="#{sinhVienBean.selectedSinhVien != null}">
+                            <div class="mb-3">
+                                <label for="id" class="form-label">ID</label>
+                                <h:inputText id="id" value="#{sinhVienBean.selectedSinhVien.id}"
+                                             styleClass="form-control"
+                                             readonly="true"
+                                             style="background-color: #e9ecef;"/>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="ma" class="form-label">Mã Sinh viên (*)</label>
+                                <h:inputText id="ma" value="#{sinhVienBean.selectedSinhVien.maSinhVien}"
+                                             styleClass="form-control"
+                                             required="true"
+                                             requiredMessage="Mã sinh viên bắt buộc nhập"
+                                             maxlength="20"/>
+                                <h:message for="ma" style="color: red; font-size: 0.875em;"/>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="hoten" class="form-label">Họ tên (*)</label>
+                                <h:inputText id="hoten" value="#{sinhVienBean.selectedSinhVien.hoTen}"
+                                             styleClass="form-control"
+                                             required="true"
+                                             requiredMessage="Họ tên bắt buộc nhập"
+                                             maxlength="100"/>
+                                <h:message for="hoten" style="color: red; font-size: 0.875em;"/>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <h:inputText id="email" value="#{sinhVienBean.selectedSinhVien.email}"
+                                             styleClass="form-control"
+                                             validatorMessage="Email không đúng định dạng"
+                                             maxlength="100"/>
+                                <h:message for="email" style="color: red; font-size: 0.875em;"/>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="lop" class="form-label">Lớp (*)</label>
+                                <h:inputText id="lop" value="#{sinhVienBean.selectedSinhVien.lop}"
+                                             styleClass="form-control"
+                                             required="true"
+                                             requiredMessage="Lớp bắt buộc nhập"
+                                             maxlength="50"/>
+                                <h:message for="lop" style="color: red; font-size: 0.875em;"/>
+                            </div>
+
+                            <div class="d-grid gap-2 d-sm-flex">
+                                <h:commandButton value="Cập nhật" action="#{sinhVienBean.update}"
+                                                 styleClass="btn btn-success"/>
+                                <h:commandButton value="Hủy" action="#{sinhVienBean.cancel}"
+                                                 styleClass="btn btn-outline-secondary"/>
+                            </div>
+                        </h:form>
+
+                        <!-- Not Found State -->
+                        <h:panelGroup rendered="#{sinhVienBean.selectedSinhVien == null}">
+                            <div class="text-center py-4">
+                                <i class="bi bi-exclamation-circle text-danger" style="font-size: 3rem;"></i>
+                                <p class="text-danger mt-3">Không tìm thấy sinh viên</p>
+                                <h:link outcome="sinhvien-list" value="Quay lại danh sách" styleClass="btn btn-primary"/>
+                            </div>
+                        </h:panelGroup>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</h:body>
+</html>

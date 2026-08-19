@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <display-name>Lab07 CRUD MVC</display-name>
+    
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- Servlet Mappings -->
+    <servlet>
+        <servlet-name>SinhVienController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.SinhVienController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SinhVienController</servlet-name>
+        <url-pattern>/sinh-vien</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SachController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.SachController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SachController</servlet-name>
+        <url-pattern>/sach</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SanPhamController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.SanPhamController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SanPhamController</servlet-name>
+        <url-pattern>/san-pham</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LopHocController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.LopHocController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LopHocController</servlet-name>
+        <url-pattern>/lop-hoc</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>DiemSinhVienController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.DiemSinhVienController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DiemSinhVienController</servlet-name>
+        <url-pattern>/diem-sinh-vien</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>CartController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.CartController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartController</servlet-name>
+        <url-pattern>/gio-hang</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutController</servlet-name>
+        <servlet-class>vn.edu.eaut.lab7.controller.LogoutController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutController</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Listeners -->
+    <listener>
+        <listener-class>vn.edu.eaut.lab7.listener.AppListener</listener-class>
+    </listener>
+    
+    <!-- Filters -->
+    <filter>
+        <filter-name>LoginFilter</filter-name>
+        <filter-class>vn.edu.eaut.lab7.filter.LoginFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>LoginFilter</filter-name>
+        <url-pattern>/admin/*</url-pattern>
+    </filter-mapping>
+    
+    <!-- Session Config -->
+    <session-config>
+        <cookie-config>
+            <http-only>true</http-only>
+        </cookie-config>
+        <tracking-mode>COOKIE</tracking-mode>
+        <timeout>30</timeout>
+    </session-config>
+    
+</web-app>

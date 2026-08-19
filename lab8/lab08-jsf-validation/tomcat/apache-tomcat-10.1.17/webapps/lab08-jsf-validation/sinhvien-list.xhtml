@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="jakarta.faces.html"
+      xmlns:f="jakarta.faces.core">
+<h:head>
+    <title>Danh sách Sinh viên JSF</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet"/>
+</h:head>
+<h:body style="background: #f8f9fa;">
+    <div class="container mt-4">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><h:link outcome="/index" value="Trang chủ"/></li>
+                <li class="breadcrumb-item active">Danh sách Sinh viên</li>
+            </ol>
+        </nav>
+
+        <div class="card shadow">
+            <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+                <h4 class="mb-0"><i class="bi bi-list-ul"></i> Danh sách Sinh viên</h4>
+                <h:link outcome="sinhvien-form" value="Thêm mới" styleClass="btn btn-light btn-sm"/>
+            </div>
+            <div class="card-body">
+                <!-- Global Messages -->
+                <h:messages globalOnly="true" infoStyle="color: green; font-weight: bold;"
+                           errorStyle="color: red; font-weight: bold;"/>
+
+                <!-- Search Form -->
+                <h:form styleClass="mb-4">
+                    <div class="row g-3">
+                        <div class="col-md-8">
+                            <label class="form-label">Tìm kiếm</label>
+                            <h:inputText value="#{sinhVienBean.keyword}"
+                                         styleClass="form-control"
+                                         placeholder="Nhập tên hoặc lớp học..."/>
+                        </div>
+                        <div class="col-md-4 d-flex align-items-end">
+                            <h:commandButton value="Tìm kiếm" action="#{sinhVienBean.search}"
+                                             styleClass="btn btn-primary me-2"/>
+                            <h:commandButton value="Xem tất cả" action="#{sinhVienBean.viewAll}"
+                                             styleClass="btn btn-outline-secondary"/>
+                        </div>
+                    </div>
+                </h:form>
+
+                <!-- Data Table -->
+                <h:form>
+                    <div class="table-responsive">
+                        <h:dataTable value="#{sinhVienBean.dsSinhVien}" var="sv"
+                                     styleClass="table table-hover table-bordered"
+                                     headerClass="table-primary"
+                                     columnClasses="text-center,,text-center,,text-center"
+                                     rendered="#{not empty sinhVienBean.dsSinhVien}">
+
+                            <h:column>
+                                <f:facet name="header">ID</f:facet>
+                                <h:outputText value="#{sv.id}"/>
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Mã SV</f:facet>
+                                <h:outputText value="#{sv.maSinhVien}" style="font-weight: bold;"/>
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Họ tên</f:facet>
+                                <h:outputText value="#{sv.hoTen}"/>
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Email</f:facet>
+                                <h:outputText value="#{sv.email}"/>
+                            </h:column>
+
+                            <h:column>
+                                <f:facet name="header">Lớp</f:facet>
+                                <h:outputText value="#{sv.lop}"/>
+                            </h:column>
+
+                            <h:column styleClass="text-center">
+                                <f:facet name="header">Thao tác</f:facet>
+                                <h:commandButton value="Sửa" action="#{sinhVienBean.edit(sv.id)}"
+                                                 styleClass="btn btn-sm btn-warning me-1"/>
+                                <h:commandButton value="Xóa" action="#{sinhVienBean.delete(sv.id)}"
+                                                 styleClass="btn btn-sm btn-danger"
+                                                 onclick="return confirm('Bạn chắc chắn muốn xóa sinh viên này?');"/>
+                            </h:column>
+                        </h:dataTable>
+                    </div>
+
+                    <!-- Empty State -->
+                    <h:panelGroup rendered="#{empty sinhVienBean.dsSinhVien}">
+                        <div class="text-center py-5">
+                            <i class="bi bi-inbox" style="font-size: 4rem; color: #ccc;"></i>
+                            <p class="text-muted mt-3">Không có dữ liệu sinh viên</p>
+                        </div>
+                    </h:panelGroup>
+                </h:form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</h:body>
+</html>

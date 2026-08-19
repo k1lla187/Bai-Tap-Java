@@ -1,0 +1,306 @@
+18-Aug-2026 14:50:21.894 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+18-Aug-2026 14:50:21.898 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+18-Aug-2026 14:50:21.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+18-Aug-2026 14:50:21.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+18-Aug-2026 14:50:21.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Aug-2026 14:50:21.899 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Aug-2026 14:50:21.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+18-Aug-2026 14:50:21.900 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+18-Aug-2026 14:50:21.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Aug-2026 14:50:21.901 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 14:50:21.902 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 14:50:21.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+18-Aug-2026 14:50:21.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Aug-2026 14:50:21.928 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Aug-2026 14:50:21.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Aug-2026 14:50:21.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Aug-2026 14:50:21.929 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Aug-2026 14:50:21.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Aug-2026 14:50:21.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Aug-2026 14:50:21.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Aug-2026 14:50:21.930 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 14:50:21.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 14:50:21.931 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+18-Aug-2026 14:50:21.943 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+18-Aug-2026 14:50:22.352 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Aug-2026 14:50:22.382 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:573)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 11 more
+18-Aug-2026 14:50:22.384 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [733] milliseconds
+18-Aug-2026 14:50:22.475 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Aug-2026 14:50:22.476 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+18-Aug-2026 14:50:22.553 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+18-Aug-2026 14:50:24.591 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Aug-2026 14:50:24.701 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+18-Aug-2026 14:50:24.753 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+18-Aug-2026 14:50:25.227 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+18-Aug-2026 14:50:25.673 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+18-Aug-2026 14:50:26.176 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+18-Aug-2026 14:50:26.319 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+18-Aug-2026 14:50:26.640 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+18-Aug-2026 14:50:27.306 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [4,752] ms
+18-Aug-2026 14:50:27.306 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+18-Aug-2026 14:50:27.339 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [33] ms
+18-Aug-2026 14:50:27.340 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+18-Aug-2026 14:50:27.734 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [394] ms
+18-Aug-2026 14:50:27.734 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+18-Aug-2026 14:50:27.783 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [48] ms
+18-Aug-2026 14:50:27.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+18-Aug-2026 14:50:27.828 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [45] ms
+18-Aug-2026 14:50:27.830 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+18-Aug-2026 14:50:27.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [30] ms
+18-Aug-2026 14:50:27.870 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5483] milliseconds
+18-Aug-2026 15:03:58.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+18-Aug-2026 15:03:58.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+18-Aug-2026 15:03:58.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+18-Aug-2026 15:03:58.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+18-Aug-2026 15:03:58.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Aug-2026 15:03:58.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Aug-2026 15:03:58.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+18-Aug-2026 15:03:58.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+18-Aug-2026 15:03:58.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Aug-2026 15:03:58.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:03:58.493 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:03:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+18-Aug-2026 15:03:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Aug-2026 15:03:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Aug-2026 15:03:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Aug-2026 15:03:58.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Aug-2026 15:03:58.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Aug-2026 15:03:58.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Aug-2026 15:03:58.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Aug-2026 15:03:58.513 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Aug-2026 15:03:58.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:03:58.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:03:58.514 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+18-Aug-2026 15:03:58.522 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+18-Aug-2026 15:03:58.866 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+18-Aug-2026 15:03:58.888 SEVERE [main] org.apache.catalina.util.LifecycleBase.handleSubClassException Failed to initialize component [Connector["http-nio-8080"]]
+	org.apache.catalina.LifecycleException: Protocol handler initialization failed
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1015)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardService.initInternal(StandardService.java:554)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:1010)
+		at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:127)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:747)
+		at org.apache.catalina.startup.Catalina.load(Catalina.java:769)
+		at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+		at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:307)
+		at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:477)
+	Caused by: java.net.BindException: Address already in use: bind
+		at java.base/sun.nio.ch.Net.bind0(Native Method)
+		at java.base/sun.nio.ch.Net.bind(Net.java:573)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+		at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+		at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:247)
+		at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:202)
+		at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1280)
+		at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:1293)
+		at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:624)
+		at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:77)
+		at org.apache.catalina.connector.Connector.initInternal(Connector.java:1013)
+		... 11 more
+18-Aug-2026 15:03:58.889 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [609] milliseconds
+18-Aug-2026 15:03:58.953 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Aug-2026 15:03:58.953 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+18-Aug-2026 15:03:59.033 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+18-Aug-2026 15:03:59.076 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation] was found with a last modified time that did not match the associated WAR. It will be deleted.
+18-Aug-2026 15:04:00.696 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Aug-2026 15:04:00.777 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+18-Aug-2026 15:04:00.816 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+18-Aug-2026 15:04:01.191 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+18-Aug-2026 15:04:01.561 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+18-Aug-2026 15:04:01.963 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+18-Aug-2026 15:04:02.079 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+18-Aug-2026 15:04:02.334 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+18-Aug-2026 15:04:02.911 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [3,877] ms
+18-Aug-2026 15:04:02.912 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+18-Aug-2026 15:04:02.947 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [35] ms
+18-Aug-2026 15:04:02.948 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+18-Aug-2026 15:04:03.293 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [346] ms
+18-Aug-2026 15:04:03.294 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+18-Aug-2026 15:04:03.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [33] ms
+18-Aug-2026 15:04:03.327 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+18-Aug-2026 15:04:03.365 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [38] ms
+18-Aug-2026 15:04:03.367 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+18-Aug-2026 15:04:03.402 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [34] ms
+18-Aug-2026 15:04:03.407 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4515] milliseconds
+18-Aug-2026 15:08:32.177 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+18-Aug-2026 15:08:32.182 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+18-Aug-2026 15:08:32.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+18-Aug-2026 15:08:32.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+18-Aug-2026 15:08:32.183 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Aug-2026 15:08:32.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Aug-2026 15:08:32.185 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+18-Aug-2026 15:08:32.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+18-Aug-2026 15:08:32.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Aug-2026 15:08:32.186 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:08:32.187 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:08:32.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+18-Aug-2026 15:08:32.201 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Aug-2026 15:08:32.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Aug-2026 15:08:32.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Aug-2026 15:08:32.202 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Aug-2026 15:08:32.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Aug-2026 15:08:32.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Aug-2026 15:08:32.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Aug-2026 15:08:32.203 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Aug-2026 15:08:32.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:08:32.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:08:32.204 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+18-Aug-2026 15:08:32.212 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+18-Aug-2026 15:08:32.561 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+18-Aug-2026 15:08:32.591 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [617] milliseconds
+18-Aug-2026 15:08:32.654 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Aug-2026 15:08:32.654 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+18-Aug-2026 15:08:32.728 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+18-Aug-2026 15:08:32.762 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation] was found with a last modified time that did not match the associated WAR. It will be deleted.
+18-Aug-2026 15:08:34.506 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Aug-2026 15:08:34.581 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+18-Aug-2026 15:08:34.617 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+18-Aug-2026 15:08:34.954 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+18-Aug-2026 15:08:35.417 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+18-Aug-2026 15:08:35.858 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+18-Aug-2026 15:08:35.963 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+18-Aug-2026 15:08:36.224 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+18-Aug-2026 15:08:36.826 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [4,098] ms
+18-Aug-2026 15:08:36.827 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+18-Aug-2026 15:08:36.860 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [33] ms
+18-Aug-2026 15:08:36.861 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+18-Aug-2026 15:08:37.206 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [344] ms
+18-Aug-2026 15:08:37.206 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+18-Aug-2026 15:08:37.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [37] ms
+18-Aug-2026 15:08:37.244 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+18-Aug-2026 15:08:37.282 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [37] ms
+18-Aug-2026 15:08:37.282 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+18-Aug-2026 15:08:37.307 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [25] ms
+18-Aug-2026 15:08:37.311 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+18-Aug-2026 15:08:37.341 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4748] milliseconds
+18-Aug-2026 15:14:53.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+18-Aug-2026 15:14:53.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+18-Aug-2026 15:14:53.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+18-Aug-2026 15:14:53.153 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+18-Aug-2026 15:14:53.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Aug-2026 15:14:53.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Aug-2026 15:14:53.155 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+18-Aug-2026 15:14:53.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+18-Aug-2026 15:14:53.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Aug-2026 15:14:53.156 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:14:53.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:14:53.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+18-Aug-2026 15:14:53.176 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Aug-2026 15:14:53.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Aug-2026 15:14:53.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Aug-2026 15:14:53.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Aug-2026 15:14:53.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Aug-2026 15:14:53.178 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Aug-2026 15:14:53.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Aug-2026 15:14:53.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Aug-2026 15:14:53.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:14:53.179 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:14:53.180 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+18-Aug-2026 15:14:53.187 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+18-Aug-2026 15:14:53.533 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+18-Aug-2026 15:14:53.567 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [632] milliseconds
+18-Aug-2026 15:14:53.651 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Aug-2026 15:14:53.651 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+18-Aug-2026 15:14:53.727 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+18-Aug-2026 15:14:53.765 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation] was found with a last modified time that did not match the associated WAR. It will be deleted.
+18-Aug-2026 15:14:55.400 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Aug-2026 15:14:55.485 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+18-Aug-2026 15:14:55.530 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+18-Aug-2026 15:14:55.928 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+18-Aug-2026 15:14:56.326 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+18-Aug-2026 15:14:56.787 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+18-Aug-2026 15:14:56.995 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+18-Aug-2026 15:14:57.254 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+18-Aug-2026 15:14:57.879 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [4,151] ms
+18-Aug-2026 15:14:57.879 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+18-Aug-2026 15:14:57.910 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [31] ms
+18-Aug-2026 15:14:57.911 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+18-Aug-2026 15:14:58.288 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [378] ms
+18-Aug-2026 15:14:58.288 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+18-Aug-2026 15:14:58.360 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [51] ms
+18-Aug-2026 15:14:58.369 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+18-Aug-2026 15:14:58.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [107] ms
+18-Aug-2026 15:14:58.476 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+18-Aug-2026 15:14:58.523 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [47] ms
+18-Aug-2026 15:14:58.530 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+18-Aug-2026 15:14:58.560 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4991] milliseconds
+18-Aug-2026 15:21:38.722 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/10.1.17
+18-Aug-2026 15:21:38.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Dec 7 2023 23:31:38 UTC
+18-Aug-2026 15:21:38.727 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 10.1.17.0
+18-Aug-2026 15:21:38.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+18-Aug-2026 15:21:38.728 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+18-Aug-2026 15:21:38.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+18-Aug-2026 15:21:38.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-21.0.11
+18-Aug-2026 15:21:38.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           21.0.11+9-LTS-211
+18-Aug-2026 15:21:38.729 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+18-Aug-2026 15:21:38.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:21:38.730 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:21:38.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\conf\logging.properties
+18-Aug-2026 15:21:38.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+18-Aug-2026 15:21:38.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+18-Aug-2026 15:21:38.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+18-Aug-2026 15:21:38.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+18-Aug-2026 15:21:38.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+18-Aug-2026 15:21:38.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+18-Aug-2026 15:21:38.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+18-Aug-2026 15:21:38.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+18-Aug-2026 15:21:38.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:21:38.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17
+18-Aug-2026 15:21:38.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\temp
+18-Aug-2026 15:21:38.754 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The Apache Tomcat Native library which allows using OpenSSL was not found on the java.library.path: [C:\Program Files\Java\jdk-21.0.11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Java\jdk-21.0.11\bin;C:\Program Files\apache-maven-3.9.16\bin;C:\Program Files\Git\cmd;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\admin\AppData\Local\Microsoft\WindowsApps;C:\Users\admin\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\admin\AppData\Local\GitHubDesktop\bin;C:\Users\admin\AppData\Local\Microsoft\WinGet\Links;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.0.1\bin;C:\Users\admin\AppData\Local\Programs\cursor\resources\app\bin;.]
+18-Aug-2026 15:21:39.086 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8081"]
+18-Aug-2026 15:21:39.114 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [581] milliseconds
+18-Aug-2026 15:21:39.179 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+18-Aug-2026 15:21:39.180 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/10.1.17]
+18-Aug-2026 15:21:39.251 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war]
+18-Aug-2026 15:21:39.290 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation] was found with a last modified time that did not match the associated WAR. It will be deleted.
+18-Aug-2026 15:21:40.967 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+18-Aug-2026 15:21:41.047 INFO [main] org.jboss.weld.environment.servlet.EnhancedListener.onStartup WELD-ENV-001008: Initialize Weld using ServletContainerInitializer
+18-Aug-2026 15:21:41.097 INFO [main] org.jboss.weld.bootstrap.WeldStartup.<clinit> WELD-000900: 5.1.2 (Final)
+18-Aug-2026 15:21:41.571 INFO [main] org.jboss.weld.bootstrap.WeldStartup.startContainer WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+18-Aug-2026 15:21:42.030 INFO [main] org.jboss.weld.environment.tomcat.TomcatContainer.initialize WELD-ENV-001100: Tomcat 7+ detected, CDI injection will be available in Servlets, Filters and Listeners.
+18-Aug-2026 15:21:42.470 INFO [main] com.sun.faces.config.ConfigureListener.contextInitialized Initializing Mojarra 4.0.7 for context '/lab08-jsf-validation'
+18-Aug-2026 15:21:42.590 INFO [main] com.sun.faces.spi.InjectionProviderFactory.createInstance JSF1048: PostConstruct/PreDestroy annotations present.  ManagedBeans methods marked with these annotations will have said annotations processed.
+18-Aug-2026 15:21:42.874 INFO [main] org.hibernate.validator.internal.util.Version.<clinit> HV000001: Hibernate Validator 8.0.1.Final
+18-Aug-2026 15:21:43.538 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\lab08-jsf-validation.war] has finished in [4,288] ms
+18-Aug-2026 15:21:43.539 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs]
+18-Aug-2026 15:21:43.572 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\docs] has finished in [33] ms
+18-Aug-2026 15:21:43.573 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples]
+18-Aug-2026 15:21:43.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\examples] has finished in [341] ms
+18-Aug-2026 15:21:43.914 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager]
+18-Aug-2026 15:21:43.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\host-manager] has finished in [40] ms
+18-Aug-2026 15:21:43.954 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager]
+18-Aug-2026 15:21:44.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\manager] has finished in [49] ms
+18-Aug-2026 15:21:44.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT]
+18-Aug-2026 15:21:44.027 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [D:\Bai-Tap-Java\lab8\lab08-jsf-validation\tomcat\apache-tomcat-10.1.17\webapps\ROOT] has finished in [23] ms
+18-Aug-2026 15:21:44.031 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8081"]
+18-Aug-2026 15:21:44.052 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4936] milliseconds
