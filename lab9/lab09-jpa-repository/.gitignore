@@ -1,0 +1,14 @@
+# Maven
+target/
+.idea/
+*.iml
+.vscode/
+*.class
+.DS_Store
+
+# Logs
+*.log
+
+# Database
+*.db
+*.sqlite
