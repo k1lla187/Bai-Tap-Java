@@ -1,0 +1,5 @@
+# Lab 10 Secured App
+target/
+*.log
+*.class
+*.zip
