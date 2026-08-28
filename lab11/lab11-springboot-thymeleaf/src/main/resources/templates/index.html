@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Trang chủ</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="brand" th:href="@{/}">Spring Boot Lab</a>
+            <ul class="menu">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/students}">Students</a></li>
+                <li><a th:href="@{/courses}">Courses</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1 th:text="${title}">Hệ thống quản lý sinh viên</h1>
+            <p class="lead" th:text="${message}">Chào mừng đến với Spring Boot</p>
+            <p class="year">Năm học <span th:text="${currentYear}">2026</span></p>
+            <div class="actions">
+                <a class="btn btn-primary" th:href="@{/students}">Xem danh sách sinh viên</a>
+                <a class="btn btn-secondary" th:href="@{/courses}">Xem danh sách khóa học</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="card">
+                <h3>Spring Boot</h3>
+                <p>Framework giúp khởi tạo ứng dụng Spring nhanh chóng với cấu hình tối thiểu.</p>
+            </div>
+            <div class="card">
+                <h3>Spring MVC</h3>
+                <p>Mô hình Controller - Model - View giúp tách biệt logic và giao diện.</p>
+            </div>
+            <div class="card">
+                <h3>Thymeleaf</h3>
+                <p>Template engine mạnh mẽ, render HTML phía server với cú pháp tự nhiên.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span th:text="${currentYear}">2026</span> - Lab 11 Spring Boot Thymeleaf</p>
+    </footer>
+</body>
+</html>

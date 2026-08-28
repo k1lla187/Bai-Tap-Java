@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="brand" th:href="@{/}">Spring Boot Lab</a>
+            <ul class="menu">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/students}">Students</a></li>
+                <li><a th:href="@{/courses}">Courses</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page">
+            <h1 th:text="${course}">Công nghệ Java</h1>
+            <h2 th:text="${chapter}">Chương 4 - Spring Framework</h2>
+            <p th:text="${description}">Mô tả</p>
+
+            <h3>Các nội dung chính của Chương 4</h3>
+            <ul class="topic-list">
+                <li th:each="topic : ${topics}" th:text="${topic}">Topic</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Lab 11 Spring Boot Thymeleaf</p>
+    </footer>
+</body>
+</html>

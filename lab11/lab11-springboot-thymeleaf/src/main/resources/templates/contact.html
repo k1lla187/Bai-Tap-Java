@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Liên hệ</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="brand" th:href="@{/}">Spring Boot Lab</a>
+            <ul class="menu">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/students}">Students</a></li>
+                <li><a th:href="@{/courses}">Courses</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page">
+            <h1>Thông tin liên hệ</h1>
+            <div class="contact-card">
+                <p><strong>Khoa/Bộ môn:</strong> <span th:text="${department}">Khoa CNTT</span></p>
+                <p><strong>Trường:</strong> <span th:text="${school}">EAUT</span></p>
+                <p><strong>Địa chỉ:</strong> <span th:text="${address}">Hà Nội</span></p>
+                <p><strong>Email:</strong> <span th:text="${email}">cntt@eaut.edu.vn</span></p>
+                <p><strong>Điện thoại:</strong> <span th:text="${phone}">(024) 3557 7799</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Lab 11 Spring Boot Thymeleaf</p>
+    </footer>
+</body>
+</html>

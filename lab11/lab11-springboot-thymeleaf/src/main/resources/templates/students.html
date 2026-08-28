@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Danh sách sinh viên</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="brand" th:href="@{/}">Spring Boot Lab</a>
+            <ul class="menu">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/students}">Students</a></li>
+                <li><a th:href="@{/courses}">Courses</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page">
+            <h1 th:text="${title}">Danh sách sinh viên</h1>
+            <p>Tổng số: <span th:text="${#lists.size(students)}">0</span> sinh viên</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã SV</th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Lớp</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="s, iter : ${students}">
+                        <td th:text="${iter.count}">1</td>
+                        <td th:text="${s.studentCode}">SV001</td>
+                        <td th:text="${s.fullName}">Nguyễn Văn A</td>
+                        <td th:text="${s.email}">a@eaut.edu.vn</td>
+                        <td th:text="${s.className}">CNTT1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Lab 11 Spring Boot Thymeleaf</p>
+    </footer>
+</body>
+</html>

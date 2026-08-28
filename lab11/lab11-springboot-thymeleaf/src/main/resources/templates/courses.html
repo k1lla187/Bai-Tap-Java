@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="${title}">Danh sách khóa học</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="brand" th:href="@{/}">Spring Boot Lab</a>
+            <ul class="menu">
+                <li><a th:href="@{/}">Home</a></li>
+                <li><a th:href="@{/about}">About</a></li>
+                <li><a th:href="@{/students}">Students</a></li>
+                <li><a th:href="@{/courses}">Courses</a></li>
+                <li><a th:href="@{/contact}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="page">
+            <h1 th:text="${title}">Danh sách khóa học</h1>
+            <p>Tổng số: <span th:text="${#lists.size(courses)}">0</span> khóa học</p>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã môn</th>
+                        <th>Tên môn</th>
+                        <th>Số tín chỉ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="c, iter : ${courses}">
+                        <td th:text="${iter.count}">1</td>
+                        <td th:text="${c.courseCode}">IT001</td>
+                        <td th:text="${c.courseName}">Java</td>
+                        <td th:text="${c.credits}">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 - Lab 11 Spring Boot Thymeleaf</p>
+    </footer>
+</body>
+</html>
