@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${isEdit} ? 'Sửa Sinh viên' : 'Thêm Sinh viên mới'">Form Sinh viên</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar h1 {
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+        }
+        
+        .card-header {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-header h2 {
+            color: #333;
+            font-size: 1.3rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: #4a5568;
+        }
+        
+        .form-group label span {
+            color: red;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        
+        .form-group .error {
+            color: #e53e3e;
+            font-size: 0.85rem;
+            margin-top: 0.3rem;
+            display: block;
+        }
+        
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.7rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-success {
+            background-color: #48bb78;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background-color: #38a169;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background-color: #718096;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5a6c7a;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>📚 Hệ thống Quản lý Sinh viên - Lab 12</h1>
+    </nav>
+    
+    <main class="container">
+        <a th:href="@{/students}" class="back-link">← Quay lại danh sách</a>
+        
+        <div class="card">
+            <div class="card-header">
+                <h2 th:text="${isEdit} ? '✏️ Sửa thông tin Sinh viên' : '➕ Thêm Sinh viên mới'">
+                    Form Sinh viên
+                </h2>
+            </div>
+            
+            <!-- Bai 4: Form them/sua sinh vien -->
+            <!-- Bai 5: Validation hien thi loi -->
+            <form th:action="@{/students/save}" 
+                  th:object="${student}" 
+                  method="post">
+                
+                <!-- Hidden ID for edit mode -->
+                <input type="hidden" th:field="*{id}">
+                
+                <div class="form-group">
+                    <label for="studentCode">Mã Sinh viên <span>*</span></label>
+                    <input type="text" id="studentCode" th:field="*{studentCode}"
+                           placeholder="Ví dụ: 2023001"
+                           class="form-control">
+                    <!-- Hien thi loi validation -->
+                    <span class="error" 
+                          th:if="${#fields.hasErrors('studentCode')}" 
+                          th:errors="*{studentCode}">Lỗi mã SV</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="fullName">Họ tên <span>*</span></label>
+                    <input type="text" id="fullName" th:field="*{fullName}"
+                           placeholder="Nhập họ tên đầy đủ"
+                           class="form-control">
+                    <!-- Hien thi loi validation -->
+                    <span class="error" 
+                          th:if="${#fields.hasErrors('fullName')}" 
+                          th:errors="*{fullName}">Lỗi họ tên</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email <span>*</span></label>
+                    <input type="email" id="email" th:field="*{email}"
+                           placeholder="Ví dụ: email@eaut.edu.vn"
+                           class="form-control">
+                    <!-- Hien thi loi validation -->
+                    <span class="error" 
+                          th:if="${#fields.hasErrors('email')}" 
+                          th:errors="*{email}">Lỗi email</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="className">Lớp <span>*</span></label>
+                    <input type="text" id="className" th:field="*{className}"
+                           placeholder="Ví dụ: CNTT2023A"
+                           class="form-control">
+                    <!-- Hien thi loi validation -->
+                    <span class="error" 
+                          th:if="${#fields.hasErrors('className')}" 
+                          th:errors="*{className}">Lỗi lớp</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input type="text" id="phone" th:field="*{phone}"
+                           placeholder="Ví dụ: 0901234567"
+                           class="form-control">
+                </div>
+                
+                <div class="form-group">
+                    <label for="address">Địa chỉ</label>
+                    <input type="text" id="address" th:field="*{address}"
+                           placeholder="Ví dụ: Hà Nội"
+                           class="form-control">
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-success">
+                        💾 Lưu
+                    </button>
+                    <a th:href="@{/students}" class="btn btn-secondary">
+                        Hủy
+                    </a>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Công nghệ Java - Lab 12: Phát triển ứng dụng với Spring MVC</p>
+    </footer>
+</body>
+</html>

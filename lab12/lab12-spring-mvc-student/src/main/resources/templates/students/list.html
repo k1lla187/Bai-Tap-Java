@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Sinh viên - Lab 12</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar h1 {
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .card-header {
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .card-header h2 {
+            color: #333;
+            font-size: 1.3rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary {
+            background-color: #667eea;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #5568d3;
+            transform: translateY(-2px);
+        }
+        
+        .btn-success {
+            background-color: #48bb78;
+            color: white;
+        }
+        
+        .btn-success:hover {
+            background-color: #38a169;
+        }
+        
+        .btn-warning {
+            background-color: #ed8936;
+            color: white;
+        }
+        
+        .btn-warning:hover {
+            background-color: #dd6b20;
+        }
+        
+        .btn-danger {
+            background-color: #f56565;
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background-color: #e53e3e;
+        }
+        
+        .btn-secondary {
+            background-color: #718096;
+            color: white;
+        }
+        
+        .btn-secondary:hover {
+            background-color: #5a6c7a;
+        }
+        
+        .btn-sm {
+            padding: 0.3rem 0.7rem;
+            font-size: 0.85rem;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .table th,
+        .table td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .table th {
+            background-color: #f7fafc;
+            font-weight: 600;
+            color: #4a5568;
+        }
+        
+        .table tr:hover {
+            background-color: #f7fafc;
+        }
+        
+        .table .actions {
+            white-space: nowrap;
+        }
+        
+        .search-box {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .search-box input {
+            flex: 1;
+            padding: 0.7rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        
+        .search-box button {
+            white-space: nowrap;
+        }
+        
+        .alert {
+            padding: 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        
+        .alert-success {
+            background-color: #c6f6d5;
+            color: #22543d;
+            border: 1px solid #9ae6b4;
+        }
+        
+        .alert-error {
+            background-color: #fed7d7;
+            color: #742a2a;
+            border: 1px solid #fc8181;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #718096;
+        }
+        
+        .empty-state p {
+            margin-bottom: 1rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        
+        .badge-info {
+            background-color: #bee3f8;
+            color: #2c5282;
+        }
+        
+        .stats {
+            margin-top: 1rem;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>📚 Hệ thống Quản lý Sinh viên - Lab 12</h1>
+    </nav>
+    
+    <main class="container">
+        <!-- Success/Error Messages -->
+        <div th:if="${successMessage}" class="alert alert-success" th:text="${successMessage}">
+            Thông báo thành công
+        </div>
+        <div th:if="${errorMessage}" class="alert alert-error" th:text="${errorMessage}">
+            Thông báo lỗi
+        </div>
+        
+        <!-- Page Header -->
+        <div class="card">
+            <div class="card-header">
+                <h2>📋 Danh sách Sinh viên</h2>
+                <a th:href="@{/students/create}" class="btn btn-primary">
+                    ➕ Thêm Sinh viên mới
+                </a>
+            </div>
+            
+            <!-- Search Form - Bai 9 -->
+            <form th:action="@{/students}" method="get" class="search-box">
+                <input type="text" name="search" placeholder="🔍 Tìm kiếm theo họ tên..." 
+                       th:value="${searchKeyword}">
+                <button type="submit" class="btn btn-secondary">Tìm kiếm</button>
+                <a th:if="${searchKeyword}" th:href="@{/students}" class="btn btn-warning">
+                    ✕ Xóa tìm kiếm
+                </a>
+            </form>
+            
+            <!-- Student List - Bai 3 -->
+            <div th:if="${#lists.isEmpty(students)}" class="empty-state">
+                <p>🔍 Không tìm thấy sinh viên nào!</p>
+                <a th:href="@{/students}" class="btn btn-secondary">Quay lại danh sách</a>
+            </div>
+            
+            <table th:unless="${#lists.isEmpty(students)}" class="table">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã SV</th>
+                        <th>Họ tên</th>
+                        <th>Email</th>
+                        <th>Lớp</th>
+                        <th>SĐT</th>
+                        <th>Địa chỉ</th>
+                        <th>Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="student, iterStat : ${students}">
+                        <td th:text="${iterStat.count}">1</td>
+                        <td>
+                            <span class="badge badge-info" th:text="${student.studentCode}">2023001</span>
+                        </td>
+                        <td th:text="${student.fullName}">Nguyễn Văn A</td>
+                        <td th:text="${student.email}">email@example.com</td>
+                        <td th:text="${student.className}">CNTT2023A</td>
+                        <td th:text="${student.phone ?: '-'}">0901234567</td>
+                        <td th:text="${student.address ?: '-'}">Hà Nội</td>
+                        <td class="actions">
+                            <!-- Bai 6: Xem chi tiet -->
+                            <a th:href="@{/students/{id}(id=${student.id})}" 
+                               class="btn btn-sm btn-primary" title="Xem chi tiết">
+                                👁️ Xem
+                            </a>
+                            <!-- Bai 7: Sua thong tin -->
+                            <a th:href="@{/students/edit/{id}(id=${student.id})}" 
+                               class="btn btn-sm btn-warning" title="Sửa">
+                                ✏️ Sửa
+                            </a>
+                            <!-- Bai 8: Xoa sinh vien -->
+                            <form th:action="@{/students/delete/{id}(id=${student.id})}" 
+                                  method="post" style="display: inline;"
+                                  onsubmit="return confirm('Bạn có chắc muốn xóa sinh viên này?');">
+                                <button type="submit" class="btn btn-sm btn-danger" title="Xóa">
+                                    🗑️ Xóa
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <!-- Statistics -->
+            <div th:unless="${#lists.isEmpty(students)}" class="stats">
+                <span>Tổng số: <strong th:text="${#lists.size(students)}">0</strong> sinh viên</span>
+                <span th:if="${searchKeyword}" style="margin-left: 1rem;">
+                    | Kết quả tìm kiếm cho: "<strong th:text="${searchKeyword}"></strong>"
+                </span>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Công nghệ Java - Lab 12: Phát triển ứng dụng với Spring MVC</p>
+    </footer>
+</body>
+</html>
