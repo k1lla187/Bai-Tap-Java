@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="${isEdit ? 'Sửa sinh viên' : 'Thêm sinh viên'}">Form Sinh viên</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #0F172A;
+            color: #F8FAFC;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            background: #1E293B;
+            border-bottom: 1px solid #334155;
+            padding: 1.5rem 0;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            color: #F8FAFC;
+            letter-spacing: -0.025em;
+        }
+
+        .form-card {
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: #94A3B8;
+        }
+
+        label .required {
+            color: #EF4444;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: #0F172A;
+            border: 1px solid #334155;
+            border-radius: 6px;
+            color: #F8FAFC;
+            font-size: 0.9375rem;
+            transition: border-color 0.2s;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #38BDF8;
+        }
+
+        input:disabled {
+            background: #1E293B;
+            color: #64748B;
+            cursor: not-allowed;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #334155;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9375rem;
+            font-weight: 500;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: #F97316;
+            color: #FFF;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background: #EA580C;
+            transform: translateY(-1px);
+        }
+
+        .btn-secondary {
+            background: #334155;
+            color: #F8FAFC;
+        }
+
+        .btn-secondary:hover {
+            background: #475569;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #38BDF8;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            font-size: 0.9375rem;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .hint {
+            font-size: 0.8125rem;
+            color: #64748B;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 th:text="${isEdit ? 'Sửa thông tin sinh viên' : 'Thêm sinh viên mới'}"></h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <a href="/students" class="back-link">← Quay lại danh sách</a>
+
+        <div class="form-card">
+            <form th:action="@{/students/save}" th:object="${student}" method="post">
+                <input type="hidden" th:field="*{id}">
+
+                <div class="form-group">
+                    <label for="studentCode">Mã sinh viên <span class="required">*</span></label>
+                    <input type="text" id="studentCode" th:field="*{studentCode}" 
+                           required maxlength="20"
+                           th:disabled="${isEdit}">
+                    <div class="hint" th:if="${!isEdit}">Ví dụ: 2024001, SV001, etc.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Họ và tên <span class="required">*</span></label>
+                    <input type="text" id="fullName" th:field="*{fullName}" 
+                           required maxlength="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" th:field="*{email}" 
+                           maxlength="100">
+                    <div class="hint">Email liên hệ của sinh viên</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="className">Lớp</label>
+                    <input type="text" id="className" th:field="*{className}" 
+                           maxlength="50">
+                    <div class="hint">Ví dụ: CNTT01, KTPM02, etc.</div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">
+                        <span th:text="${isEdit ? 'Cập nhật' : 'Thêm mới'}"></span>
+                    </button>
+                    <a href="/students" class="btn btn-secondary">Hủy</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
