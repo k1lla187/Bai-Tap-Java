@@ -1,0 +1,4 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Thêm môn học</title><link rel="stylesheet" th:href="@{/css/style.css}"></head>
+<body><header class="topbar"><div class="shell"><a class="brand" th:href="@{/courses}">Lab 14 · Spring Security</a></div></header><main class="shell"><section class="panel" style="max-width:650px"><h1>Thêm môn học</h1><form th:action="@{/courses/save}" th:object="${course}" method="post"><label>Mã môn học</label><input th:field="*{code}" required><label>Tên môn học</label><input th:field="*{name}" required><label>Số tín chỉ</label><input type="number" min="1" th:field="*{credits}" required><div class="actions" style="margin-top:22px"><button type="submit">Lưu</button><a class="button secondary" th:href="@{/courses}">Hủy</a></div></form></section></main></body></html>
