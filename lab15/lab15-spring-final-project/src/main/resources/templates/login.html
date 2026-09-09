@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - EAUT Portal</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <style>
+        body {
+            background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-card {
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            width: 100%;
+            max-width: 440px;
+        }
+        .login-header {
+            background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+            color: #ffffff;
+            padding: 2.5rem 2rem 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container py-4">
+    <div class="login-card mx-auto">
+        <div class="login-header">
+            <i class="fa-solid fa-graduation-cap fa-3x mb-3 text-warning"></i>
+            <h3 class="fw-bold mb-1">EAUT Portal</h3>
+            <p class="mb-0 text-white-50">Hệ thống Quản lý Đào tạo & Đăng ký Học phần</p>
+        </div>
+
+        <div class="p-4 p-sm-5">
+            <!-- Thông báo lỗi đăng nhập -->
+            <div th:if="${errorMessage}" class="alert alert-danger d-flex align-items-center mb-4">
+                <i class="fa-solid fa-circle-exclamation me-2"></i>
+                <small th:text="${errorMessage}">Sai thông tin đăng nhập</small>
+            </div>
+
+            <!-- Thông báo đăng xuất -->
+            <div th:if="${logoutMessage}" class="alert alert-success d-flex align-items-center mb-4">
+                <i class="fa-solid fa-circle-check me-2"></i>
+                <small th:text="${logoutMessage}">Đã đăng xuất</small>
+            </div>
+
+            <form th:action="@{/login}" method="post">
+                <div class="mb-3">
+                    <label class="form-label text-muted fw-semibold">
+                        <i class="fa-solid fa-user me-1 text-primary"></i> Tên đăng nhập
+                    </label>
+                    <input type="text" name="username" class="form-control form-control-lg fs-6" 
+                           placeholder="Nhập tên đăng nhập..." required autofocus>
+                </div>
+
+                <div class="mb-4">
+                    <label class="form-label text-muted fw-semibold">
+                        <i class="fa-solid fa-lock me-1 text-primary"></i> Mật khẩu
+                    </label>
+                    <input type="password" name="password" class="form-control form-control-lg fs-6" 
+                           placeholder="Nhập mật khẩu..." required>
+                </div>
+
+                <button type="submit" class="btn btn-gradient w-100 py-2 fs-6 rounded-pill mb-3">
+                    <i class="fa-solid fa-right-to-bracket me-2"></i> Đăng Nhập
+                </button>
+            </form>
+
+            <!-- Hướng dẫn tài khoản demo -->
+            <div class="mt-4 pt-3 border-top">
+                <div class="text-center text-muted small mb-2 fw-semibold">
+                    <i class="fa-solid fa-circle-info text-info me-1"></i> Tài khoản kiểm thử có sẵn:
+                </div>
+                <div class="d-flex justify-content-between bg-light p-2 rounded-3 small">
+                    <div>
+                        <span class="badge badge-admin">ADMIN</span>
+                        <strong>admin</strong> / <code>admin123</code>
+                    </div>
+                    <div>
+                        <span class="badge badge-user">USER</span>
+                        <strong>user</strong> / <code>user123</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head(${pageTitle})}"></head>
+<body>
+
+<nav th:replace="~{fragments/layout :: navbar}"></nav>
+<div th:replace="~{fragments/layout :: alerts}"></div>
+
+<main class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-white py-3 border-bottom">
+                    <h5 class="fw-bold mb-0 text-primary">
+                        <i class="fa-solid fa-user-pen me-2"></i>
+                        <span th:text="${pageTitle}">Thông Tin Sinh Viên</span>
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    <form th:action="@{/students/save}" th:object="${student}" method="post">
+                        <!-- ID ẩn (nếu đang sửa) -->
+                        <input type="hidden" th:field="*{id}">
+
+                        <!-- Mã sinh viên -->
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">
+                                Mã Sinh Viên <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" th:field="*{studentCode}" class="form-control"
+                                   th:classappend="${#fields.hasErrors('studentCode')} ? 'is-invalid' : ''"
+                                   placeholder="Ví dụ: SV001, SV20230199...">
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('studentCode')}" th:errors="*{studentCode}">
+                                Lỗi mã sinh viên
+                            </div>
+                        </div>
+
+                        <!-- Họ và tên -->
+                        <div class="mb-3">
+                            <label class="form-label fw-semibold">
+                                Họ Và Tên <span class="text-danger">*</span>
+                            </label>
+                            <input type="text" th:field="*{fullName}" class="form-control"
+                                   th:classappend="${#fields.hasErrors('fullName')} ? 'is-invalid' : ''"
+                                   placeholder="Ví dụ: Nguyễn Văn An...">
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('fullName')}" th:errors="*{fullName}">
+                                Lỗi họ và tên
+                            </div>
+                        </div>
+
+                        <!-- Ngày sinh -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">
+                                Ngày Sinh <span class="text-danger">*</span>
+                            </label>
+                            <input type="date" th:field="*{dateOfBirth}" class="form-control"
+                                   th:classappend="${#fields.hasErrors('dateOfBirth')} ? 'is-invalid' : ''">
+                            <div class="invalid-feedback" th:if="${#fields.hasErrors('dateOfBirth')}" th:errors="*{dateOfBirth}">
+                                Lỗi ngày sinh
+                            </div>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between pt-2">
+                            <a th:href="@{/students}" class="btn btn-outline-secondary px-4">
+                                <i class="fa-solid fa-arrow-left me-1"></i> Quay lại
+                            </a>
+                            <button type="submit" class="btn btn-primary px-4">
+                                <i class="fa-solid fa-floppy-disk me-1"></i> Lưu Sinh Viên
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

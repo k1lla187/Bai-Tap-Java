@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments/layout :: head('Đăng Ký Học Phần')}"></head>
+<body>
+
+<nav th:replace="~{fragments/layout :: navbar}"></nav>
+<div th:replace="~{fragments/layout :: alerts}"></div>
+
+<main class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+            <div class="card shadow">
+                <div class="card-header bg-white py-3 border-bottom">
+                    <h5 class="fw-bold mb-0 text-primary">
+                        <i class="fa-solid fa-clipboard-plus me-2"></i>
+                        Đăng Ký Học Phần Cho Sinh Viên (Bài 5)
+                    </h5>
+                </div>
+                <div class="card-body p-4">
+                    <p class="text-muted mb-4 small">
+                        Hệ thống sẽ tự động kiểm tra trùng lặp (Bài 4). Nếu sinh viên đã đăng ký học phần này trước đó, hệ thống sẽ từ chối và cảnh báo.
+                    </p>
+
+                    <form th:action="@{/enrollments/save}" method="post">
+                        <!-- Chọn sinh viên -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">
+                                <i class="fa-solid fa-user-graduate me-1 text-primary"></i>
+                                Chọn Sinh Viên <span class="text-danger">*</span>
+                            </label>
+                            <select name="studentId" class="form-select form-select-lg fs-6" required>
+                                <option value="" disabled selected>-- Chọn sinh viên đăng ký --</option>
+                                <option th:each="s : ${students}"
+                                        th:value="${s.id}"
+                                        th:text="${s.studentCode} + ' - ' + ${s.fullName}">
+                                    SV001 - Nguyễn Văn An
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- Chọn môn học -->
+                        <div class="mb-4">
+                            <label class="form-label fw-semibold">
+                                <i class="fa-solid fa-book me-1 text-success"></i>
+                                Chọn Học Phần / Môn Học <span class="text-danger">*</span>
+                            </label>
+                            <select name="courseId" class="form-select form-select-lg fs-6" required>
+                                <option value="" disabled selected>-- Chọn học phần muốn đăng ký --</option>
+                                <option th:each="c : ${courses}"
+                                        th:value="${c.id}"
+                                        th:text="${c.courseCode} + ' - ' + ${c.courseName} + ' (' + ${c.credits} + ' Tín chỉ)'">
+                                    CS101 - Lập trình Java căn bản (3 Tín chỉ)
+                                </option>
+                            </select>
+                        </div>
+
+                        <!-- Buttons -->
+                        <div class="d-flex justify-content-between pt-2">
+                            <a th:href="@{/enrollments}" class="btn btn-outline-secondary px-4">
+                                <i class="fa-solid fa-list-check me-1"></i> Xem danh sách đã đăng ký
+                            </a>
+                            <button type="submit" class="btn btn-gradient px-4">
+                                <i class="fa-solid fa-check-circle me-1"></i> Xác Nhận Đăng Ký
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>

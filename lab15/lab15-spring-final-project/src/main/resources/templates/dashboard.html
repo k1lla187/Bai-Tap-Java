@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head th:replace="~{fragments/layout :: head('Bảng Điều Khiển')}"></head>
+<body>
+
+<nav th:replace="~{fragments/layout :: navbar}"></nav>
+<div th:replace="~{fragments/layout :: alerts}"></div>
+
+<main class="container my-4">
+    <!-- Header banner -->
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <div>
+            <h2 class="fw-bold mb-1">
+                <i class="fa-solid fa-chart-line text-primary me-2"></i>Bảng Điều Khiển Hệ Thống
+            </h2>
+            <p class="text-muted mb-0">Tổng quan dữ liệu quản lý sinh viên và tình hình đăng ký học phần</p>
+        </div>
+        <div class="mt-3 mt-md-0">
+            <a th:href="@{/enrollments/create}" class="btn btn-gradient rounded-pill px-4 shadow-sm">
+                <i class="fa-solid fa-plus-circle me-1"></i> Đăng Ký Học Phần Mới
+            </a>
+        </div>
+    </div>
+
+    <!-- Bài 9: Thống kê số lượng -->
+    <div class="row g-4 mb-4">
+        <!-- Tổng sinh viên -->
+        <div class="col-md-4">
+            <div class="card stat-card stat-card-1 p-4 shadow">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-uppercase fw-semibold mb-1 opacity-75 small">Tổng số sinh viên</p>
+                        <div class="stat-number" th:text="${totalStudents}">0</div>
+                    </div>
+                    <div class="bg-white bg-opacity-25 rounded-circle p-3">
+                        <i class="fa-solid fa-users fa-2x"></i>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a th:href="@{/students}" class="text-white text-decoration-none small fw-semibold">
+                        Xem chi tiết danh sách <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tổng khóa học -->
+        <div class="col-md-4">
+            <div class="card stat-card stat-card-2 p-4 shadow">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-uppercase fw-semibold mb-1 opacity-75 small">Tổng số học phần</p>
+                        <div class="stat-number" th:text="${totalCourses}">0</div>
+                    </div>
+                    <div class="bg-white bg-opacity-25 rounded-circle p-3">
+                        <i class="fa-solid fa-book fa-2x"></i>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a th:href="@{/courses}" class="text-white text-decoration-none small fw-semibold">
+                        Xem danh mục học phần <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tổng lượt đăng ký -->
+        <div class="col-md-4">
+            <div class="card stat-card stat-card-3 p-4 shadow">
+                <div class="d-flex justify-content-between align-items-start">
+                    <div>
+                        <p class="text-uppercase fw-semibold mb-1 opacity-75 small">Tổng lượt đăng ký</p>
+                        <div class="stat-number" th:text="${totalEnrollments}">0</div>
+                    </div>
+                    <div class="bg-white bg-opacity-25 rounded-circle p-3">
+                        <i class="fa-solid fa-clipboard-check fa-2x"></i>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a th:href="@{/enrollments}" class="text-white text-decoration-none small fw-semibold">
+                        Xem sổ đăng ký môn học <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Actions & Recent Enrollments -->
+    <div class="row g-4">
+        <!-- Cột Phím tắt thao tác nhanh -->
+        <div class="col-lg-4">
+            <div class="card p-4 h-100 shadow-sm">
+                <h5 class="fw-bold mb-3">
+                    <i class="fa-solid fa-bolt text-warning me-2"></i>Thao Tác Nhanh
+                </h5>
+                <div class="d-grid gap-2">
+                    <a th:href="@{/enrollments/create}" class="btn btn-outline-primary text-start p-3 rounded-3">
+                        <i class="fa-solid fa-cart-plus me-2 text-primary"></i> Đăng ký học phần mới
+                    </a>
+                    <a th:href="@{/enrollments}" class="btn btn-outline-secondary text-start p-3 rounded-3">
+                        <i class="fa-solid fa-table-list me-2 text-secondary"></i> Xem toàn bộ danh sách đăng ký
+                    </a>
+                    <a sec:authorize="hasRole('ADMIN')" th:href="@{/students/new}" class="btn btn-outline-success text-start p-3 rounded-3">
+                        <i class="fa-solid fa-user-plus me-2 text-success"></i> Thêm hồ sơ sinh viên mới
+                    </a>
+                    <a sec:authorize="hasRole('ADMIN')" th:href="@{/courses/new}" class="btn btn-outline-info text-start p-3 rounded-3">
+                        <i class="fa-solid fa-folder-plus me-2 text-info"></i> Thêm môn học / học phần mới
+                    </a>
+                </div>
+
+                <!-- Box thông tin tài khoản -->
+                <div class="mt-4 p-3 bg-light rounded-3">
+                    <small class="text-muted d-block mb-1 fw-semibold">Thông tin phiên đăng nhập:</small>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="fw-bold" sec:authentication="name">User</span>
+                        <div>
+                            <span sec:authorize="hasRole('ADMIN')" class="badge badge-admin">Quyền Quản Trị (ADMIN)</span>
+                            <span sec:authorize="hasRole('USER')" class="badge badge-user">Người Dùng (USER)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cột Danh sách đăng ký gần đây -->
+        <div class="col-lg-8">
+            <div class="card p-4 h-100 shadow-sm">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="fw-bold mb-0">
+                        <i class="fa-solid fa-clock-rotate-left text-primary me-2"></i>Lượt Đăng Ký Gần Đây
+                    </h5>
+                    <a th:href="@{/enrollments}" class="btn btn-sm btn-outline-primary">Xem tất cả</a>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-custom align-middle">
+                        <thead>
+                            <tr>
+                                <th>Sinh Viên</th>
+                                <th>Môn Học</th>
+                                <th>Tín Chỉ</th>
+                                <th>Ngày Đăng Ký</th>
+                                <th class="text-end">Chi Tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr th:each="e : ${recentEnrollments}">
+                                <td>
+                                    <div class="fw-semibold" th:text="${e.student.fullName}">Nguyễn Văn An</div>
+                                    <small class="text-muted" th:text="${e.student.studentCode}">SV001</small>
+                                </td>
+                                <td>
+                                    <div class="fw-semibold" th:text="${e.course.courseName}">Lập trình Java</div>
+                                    <small class="text-muted" th:text="${e.course.courseCode}">CS101</small>
+                                </td>
+                                <td>
+                                    <span class="badge bg-secondary rounded-pill" th:text="${e.course.credits} + ' TC'">3 TC</span>
+                                </td>
+                                <td>
+                                    <small class="text-muted" th:text="${#temporals.format(e.enrollDate, 'dd/MM/yyyy')}">01/09/2026</small>
+                                </td>
+                                <td class="text-end">
+                                    <a th:href="@{/enrollments/student/{id}(id=${e.student.id})}" class="btn btn-sm btn-light" title="Xem các môn SV này đã đăng ký">
+                                        <i class="fa-solid fa-eye text-primary"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr th:if="${#lists.isEmpty(recentEnrollments)}">
+                                <td colspan="5" class="text-center text-muted py-4">Chưa có lượt đăng ký học phần nào.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+</body>
+</html>
